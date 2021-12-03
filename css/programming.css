@@ -1,0 +1,594 @@
+@font-face {
+    font-family: 'Samim';
+    src: url('../webFont/Samim.eot') format('embedded-opentype'), url('../webFont/Samim.woff') format('woff'), url('../webFont/Samim.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../webFont/vazir-font-v16.1.0/Vazir-Bold.eot') format('embedded-opentype'), url('../webFont/vazir-font-v16.1.0/Vazir-Bold.ttf') format('truetype'), url('../webFont/vazir-font-v16.1.0/Vazir-Bold.woff') format('woff'), url('../webFont/vazir-font-v16.1.0/Vazir-Bold.woff2') format('woff2');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #2e57dd;
+    font-family: 'Samim';
+}
+
+
+/* hamber menu */
+
+.hamber_menu {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    background-color: #fff;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+
+/* progress bar */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.progress-bar {
+    height: 3.5px;
+    background: #ac31ee;
+    width: 0;
+}
+
+@media (max-width:600px) {
+    .hamber_menu {
+        visibility: visible;
+        color: rgb(48, 41, 41);
+    }
+    .hamber_menu ul li a {
+        position: relative;
+        color: rgb(27, 26, 26);
+        font-weight: 400;
+    }
+    .hamber_menu ul li {
+        position: relative;
+        right: 30%;
+        font-size: 16px;
+    }
+    .ri-menu-line {
+        position: absolute;
+        right: 7%;
+        height: 31px;
+        width: 5.5%;
+        top: 25%;
+    }
+}
+
+@media (max-width:480px) {
+    .hamber_menu {
+        visibility: visible;
+        color: rgb(48, 41, 41);
+    }
+    .hamber_menu ul li a {
+        position: relative;
+        color: rgb(27, 26, 26);
+        font-weight: 400;
+    }
+    .hamber_menu ul li {
+        position: relative;
+        right: 15%;
+        font-size: 16px;
+    }
+    .ri-menu-line {
+        position: absolute;
+        right: 7%;
+        height: 25px;
+        width: 5.5%;
+        top: 30%;
+    }
+}
+
+@media (max-width:400px) {
+    .hamber_menu {
+        visibility: visible;
+        color: rgb(48, 41, 41);
+    }
+    .hamber_menu ul li a {
+        position: relative;
+        color: rgb(27, 26, 26);
+        font-weight: 400;
+    }
+    .hamber_menu ul li {
+        position: relative;
+        right: 15%;
+    }
+    .ri-menu-line {
+        position: absolute;
+        right: 4.8%;
+        height: 25px;
+        width: 5.5%;
+        top: 26%;
+    }
+}
+
+
+/* triangle */
+
+.triangle1 {
+    position: absolute;
+    left: 103%;
+    top: 30px;
+    transform: translateX(-50%);
+    width: 200px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.triangle2 {
+    position: absolute;
+    left: -70px;
+    top: 20%;
+    transform: translateY(-50%);
+    width: 200px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+@media (max-width:600px) {
+    .triangle2 {
+        top: 45%;
+        width: 30%;
+    }
+}
+
+@media (max-width:400px) {
+    .triangle2 {
+        display: none;
+    }
+}
+
+
+/* big menu */
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+    position: relative;
+    right: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* btn top */
+
+.btn {
+    padding: 6px 20px;
+    border-radius: 20px;
+    margin-left: 30px;
+    position: relative;
+    right: 9%;
+    background: transparent;
+    border-style: none;
+    outline: none;
+    transition: .3s ease-in-out;
+    background: #4F95DA;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #2a59f3;
+    box-shadow: 5px 5px 23px rgba(233, 245, 240, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+@media (max-width:600px) {
+    .btn {
+        position: absolute;
+        top: 2.2%;
+        right: 4%;
+    }
+}
+
+@media (max-width:400px) {
+    .btn {
+        display: none;
+    }
+}
+
+
+/* top_pic */
+
+.top_pic {
+    height: 500px;
+    width: 48%;
+    top: 22%;
+    position: absolute;
+    left: .5%;
+}
+
+@media (max-width:768px) {
+    .top_pic {
+        width: 70%;
+        top: 5%;
+        left: 11%;
+    }
+}
+
+@media (max-width:600px) {
+    .top_pic {
+        width: 75%;
+        top: 4%;
+        left: 10%;
+    }
+}
+
+@media (max-width:400px) {
+    .top_pic {
+        width: 75%;
+        top: 1%;
+        left: 5%;
+    }
+}
+
+
+/* top_text */
+
+.top_text {
+    position: absolute;
+    direction: rtl;
+    right: 10%;
+    top: 35%;
+    font-family: 'Samim';
+    font-size: 32px;
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    .top_text {
+        top: 58%;
+        right: 20%;
+        font-size: 27px;
+    }
+}
+
+@media (max-width:600px) {
+    .top_text {
+        top: 54%;
+        right: 15%;
+        font-size: 27px;
+    }
+}
+
+@media (max-width:400px) {
+    .top_text {
+        top: 50%;
+        right: 15%;
+        font-size: 27px;
+    }
+}
+
+.top_text span {
+    color: yellow;
+}
+
+.top_text p {
+    font-size: 15px;
+    margin-top: 4%;
+    line-height: 28px;
+}
+
+@media (max-width:400px) {
+    .top_text p {
+        position: absolute;
+        top: 95%;
+        width: 85%;
+    }
+    br {
+        display: none;
+    }
+}
+
+
+/* top_svg */
+
+.top_svg {
+    position: absolute;
+    top: 95%;
+    z-index: 15;
+}
+
+
+/* course_btn */
+
+.course_btn {
+    width: 140px;
+    height: 45px;
+    position: absolute;
+    left: 57%;
+    top: 70%;
+    font-family: 'Vazir';
+    font-size: 11px;
+    letter-spacing: .7px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.course_btn:hover {
+    background-color: #2a59f3;
+    box-shadow: 5px 5px 23px rgba(233, 245, 240, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+@media (max-width:768px) {
+    .course_btn {
+        width: 120px;
+        height: 35px;
+        position: absolute;
+        left: 22%;
+        top: 88%;
+    }
+}
+
+@media (max-width:600px) {
+    .course_btn {
+        width: 120px;
+        height: 35px;
+        position: absolute;
+        left: 20%;
+        top: 85%;
+    }
+}
+
+@media (max-width:400px) {
+    .course_btn {
+        width: 120px;
+        height: 35px;
+        position: absolute;
+        left: 20%;
+        top: 85%;
+    }
+}
+
+
+/* course_show */
+
+.course_show {
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.course_show--btn {
+    padding: 10px 14px;
+    background-color: #289672;
+    box-shadow: 5px 5px 20px rgba(42, 230, 42, 0.4);
+    color: #fff;
+    border-radius: 9px;
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    font-family: 'Samim';
+    font-size: 15px;
+    border-style: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+
+/* course cards */
+
+.first_card,
+.second_card,
+.third_card,
+.fourth_card {
+    height: 300px;
+    width: 21%;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 10px 35px 80px rgba(119, 118, 118, 0.4);
+    background-color: #f7eeee;
+    font-family: 'Vazir';
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.first_card {
+    top: 33%;
+    left: 7%;
+}
+
+.first_card img {
+    height: 65%;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.first_card--content h3 {
+    direction: rtl;
+    margin-right: 10%;
+    margin-top: 10%;
+    font-weight: 500;
+    color: #353333;
+}
+
+.first_card--content a {
+    color: #ffffff;
+    padding: 7px 25px;
+    background-color: #2e57dd;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    transition: linear .2s;
+    box-shadow: 0 8px 15px rgb(158, 164, 190);
+}
+
+.first_card--content a:hover {
+    background-color: #2a59f3;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+/* second card */
+
+.second_card {
+    top: 33%;
+    left: 29%;
+}
+
+.second_card img {
+    height: 40%;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.second_card--content h3 {
+    direction: rtl;
+    margin-right: 10%;
+    margin-top: 10%;
+    font-weight: 500;
+    color: #353333;
+}
+
+.second_card--content a {
+    color: #ffffff;
+    padding: 7px 25px;
+    background-color: #2e57dd;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    transition: linear .2s;
+    box-shadow: 0 8px 15px rgb(158, 164, 190);
+}
+
+.second_card--content a:hover {
+    background-color: #2a59f3;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+/* third card */
+
+.third_card {
+    top: 33%;
+    left: 51%;
+}
+
+.third_card img {
+    height: 40%;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.third_card--content h3 {
+    direction: rtl;
+    margin-right: 10%;
+    margin-top: 10%;
+    font-weight: 500;
+    color: #353333;
+}
+
+.third_card--content a {
+    color: #ffffff;
+    padding: 7px 25px;
+    background-color: #2e57dd;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    transition: linear .2s;
+    box-shadow: 0 8px 15px rgb(158, 164, 190);
+}
+
+.third_card--content a:hover {
+    background-color: #2a59f3;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+/* fourth card */
+
+.fourth_card {
+    top: 33%;
+    left: 73%;
+}
+
+.fourth_card img {
+    height: 40%;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fourth_card--content h3 {
+    direction: rtl;
+    margin-right: 10%;
+    margin-top: 10%;
+    font-weight: 500;
+    color: #353333;
+}
+
+.fourth_card--content a {
+    color: #ffffff;
+    padding: 7px 25px;
+    background-color: #2e57dd;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    transition: linear .2s;
+    box-shadow: 0 8px 15px rgb(158, 164, 190);
+}
+
+.fourth_card--content a:hover {
+    background-color: #2a59f3;
+    color: #fff;
+    transform: translateY(-7px);
+}
